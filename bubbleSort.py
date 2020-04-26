@@ -1,3 +1,7 @@
+''' Bubble Sort '''
+import datetime
+
+# worst case scenario time complexity is O(n^2). However implementing the while loop decreases the run time buy about %82 for this test case
 
 nums = [4, 2, 3, 4, 6, 1, 4, 6, 7]
 
@@ -16,11 +20,7 @@ def bubbleSortAsc(nums):
     return nums
 
 
-print(bubbleSortAsc(nums))
-
 # Optimized solution, but the worst case scenario is still O(n^2)
-
-
 def bubbleSortAsc2(nums):
     # stop iterating when there is no swap
     swapped = True
@@ -37,6 +37,3 @@ def bubbleSortAsc2(nums):
                 swapped = True
 
         return nums
-
-
-print(bubbleSortAsc2(nums))
